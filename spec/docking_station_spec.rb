@@ -1,14 +1,12 @@
 require 'dockingstation'
 
+
+
 describe Dockingstation do
-  docking_station = Dockingstation.new
+  it {is_expected.to respond_to(:release_bike)}
 end
 
-describe 'release bike' do
-  it 'releases bike' do 
-    expect(docking_station.release_bike).to eq "hey"
-  end
-end
+
 
 
 # describe '#release_bike' do

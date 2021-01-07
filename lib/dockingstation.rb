@@ -1,7 +1,7 @@
 
 require_relative 'bike'
 
-class Dockingstation
+class DockingStation
 
    def release_bike
      fail 'No bikes available' unless @bike
@@ -9,6 +9,7 @@ class Dockingstation
    end
 
    def dock(bike)
+     fail 'Docking station full' if @bike
      @bike = bike
    end
 
